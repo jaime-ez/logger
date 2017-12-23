@@ -63,6 +63,7 @@ describe('koa-logger', function () {
           '/200',
           200,
           sinon.match.any,
+          sinon.match.any,
           '11b')
       done()
     })
@@ -79,6 +80,7 @@ describe('koa-logger', function () {
           'GET',
           '/301',
           301,
+          sinon.match.any,
           sinon.match.any,
           '-')
       done()
@@ -97,6 +99,7 @@ describe('koa-logger', function () {
           '/304',
           304,
           sinon.match.any,
+          sinon.match.any,
           '')
       done()
     })
@@ -113,6 +116,7 @@ describe('koa-logger', function () {
           'GET',
           '/404',
           404,
+          sinon.match.any,
           sinon.match.any,
           '9b')
       done()
@@ -131,6 +135,7 @@ describe('koa-logger', function () {
           '/500',
           500,
           sinon.match.any,
+          sinon.match.any,
           '12b')
       done()
     })
@@ -148,6 +153,7 @@ describe('koa-logger', function () {
           '/error',
           500,
           sinon.match.any,
+          sinon.match.any,
           '-')
       done()
     })
@@ -164,6 +170,7 @@ describe('koa-logger', function () {
           'GET',
           '/500-boom',
           500,
+          sinon.match.any,
           sinon.match.any,
           '-')
       done()

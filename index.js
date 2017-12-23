@@ -117,6 +117,7 @@ function log (ctx, start, len, err, event) {
       ctx.method,
       ctx.originalUrl,
       status,
+      new Date(start).toISOString(),
       time(start),
       length)
 }
